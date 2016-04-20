@@ -1,11 +1,7 @@
-import static org.junit.Assert.*;
-
-import javax.xml.ws.ServiceMode;
-
+package net.iessanclemente.dapw.katas.StringCalculator.Tests;
+import static org.junit.Assert.assertEquals;
 import net.iessanclemente.dapw.katas.StringCalculator.StringCalculator;
 
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -71,7 +67,7 @@ public class TestStringCalculator {
 	
 //	@Test 
 //	public void testNegativesShouldNotWorks(){
-//		int shouldThrowAnException = sc.add("-1,2\n-3");						
+//		int shouldThrowAnException = sc.add("-11,2\n-3");						
 //	}
 	
 	
