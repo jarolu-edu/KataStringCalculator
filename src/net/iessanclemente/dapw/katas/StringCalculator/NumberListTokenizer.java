@@ -26,6 +26,9 @@ public class NumberListTokenizer {
 						if(t.startsWith("0x")){
 							return Integer.parseInt(t.substring(2),16);
 						}
+						if(t.startsWith("\\u")){
+							return Integer.parseInt(t.substring(2),8);
+						}
 						return Integer.parseInt(t);
 					}
 				}).collect(Collectors.toList());

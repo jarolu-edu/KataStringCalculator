@@ -88,8 +88,10 @@ public class TestStringCalculator {
 	
 	@Test 
 	public void testStringCalculatorSuportsHex(){
-		int shouldTwenty = StringCalculator.add("0xF,0x5");									
+		int shouldTwenty = StringCalculator.add("0xF,0x5");								
+		int shouldBeAThousandAndTwentyTwo = StringCalculator.add("//[#][@@]\r\n0xF#1000,5@@2");
 		assertEquals(20, shouldTwenty);
+		assertEquals(1022, shouldBeAThousandAndTwentyTwo);
 	}
 	
 	
