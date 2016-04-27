@@ -23,6 +23,9 @@ public class NumberListTokenizer {
 					@Override
 					public Integer apply(String t) {
 						// TODO Auto-generated method stub
+						if(t.startsWith("0x")){
+							return Integer.parseInt(t.substring(2),16);
+						}
 						return Integer.parseInt(t);
 					}
 				}).collect(Collectors.toList());

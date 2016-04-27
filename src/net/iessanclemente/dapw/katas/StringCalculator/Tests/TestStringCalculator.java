@@ -85,5 +85,13 @@ public class TestStringCalculator {
 		assertEquals(7, shouldBeSeven);		
 		assertEquals(1009, shouldBeAThousandAndNine);
 	}
+	
+	@Test 
+	public void testStringCalculatorSuportsHex(){
+		int shouldTwenty = StringCalculator.add("0xF,0x5");									
+		assertEquals(20, shouldTwenty);
+	}
+	
+	
 
 }
