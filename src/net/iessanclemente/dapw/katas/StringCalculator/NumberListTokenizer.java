@@ -12,7 +12,10 @@ public class NumberListTokenizer {
 		StringBuffer sBSeparators = new StringBuffer();
 		Iterator<String> it = separators.iterator();
 		while (it.hasNext()) {
-			sBSeparators.append(it.next());
+			String sep=it.next();
+			sep=sep.replaceAll("\\*", "\\\\*");
+			sep=sep.replaceAll("\\+", "\\\\+");
+			sBSeparators.append(sep);
 			if (it.hasNext()) {
 				sBSeparators.append("|");
 			}

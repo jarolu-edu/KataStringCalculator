@@ -85,5 +85,13 @@ public class TestStringCalculator {
 		assertEquals(7, shouldBeSeven);		
 		assertEquals(1009, shouldBeAThousandAndNine);
 	}
+	
+	@Test 
+	public void testEspecialCharsDelimitersAlsoWorks(){
+		int shouldBeSeven = StringCalculator.add("//[+][*]\r\n1001*4+3");				
+		int shouldBeAThousandAndNine = StringCalculator.add("//[*][++]\r\n2*1000,5++2");
+		assertEquals(7, shouldBeSeven);		
+		assertEquals(1009, shouldBeAThousandAndNine);
+	}
 
 }
