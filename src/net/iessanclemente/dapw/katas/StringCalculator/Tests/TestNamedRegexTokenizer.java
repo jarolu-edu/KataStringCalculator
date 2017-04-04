@@ -12,6 +12,7 @@ import org.junit.Test;
 
 public class TestNamedRegexTokenizer {
 
+        //Dummy comment
 	@Before
 	public void setUp() throws Exception {
 	}
